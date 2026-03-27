@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuaguaTime RD</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>RUTAS ISMAEL</h1>
+        <p>Simulador de transporte público dominicano</p>
+    </header>
+
+    <main>
+        <section id="buscador">
+            <select id="origen"><option value="">Origen...</option></select>
+            <select id="destino"><option value="">Destino...</option></select>
+            
+            <fieldset>
+                <legend>Alertas actuales</legend>
+                <label><input type="checkbox" class="alerta" data-pct="25"> 🌧️ Lluvia (+25%)</label>
+                <label><input type="checkbox" class="alerta" data-pct="50"> 🚗 Hora Pico (+50%)</label>
+            </fieldset>
+            
+            <button id="btnBuscar">Buscar Rutas</button>
+        </section>
+
+        <section id="resultados">
+            <h2>Rutas disponibles</h2>
+            <div id="lista-rutas"></div>
+        </section>
+
+        <section id="favoritos">
+            <h2>Mis Favoritas ⭐</h2>
+            <div id="lista-favoritos"></div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

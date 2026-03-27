@@ -1,0 +1,69 @@
+{
+  "sectores": [
+    "Villa Mella",
+    "Centro de los Héroes",
+    "Pintura",
+    "Máximo Gómez",
+    "KM 9 Enriquillo",
+    "Zona Colonial",
+    "Piantini",
+    "Los Alcarrizos"
+  ],
+  "rutas": [
+    {
+      "id": 1,
+      "nombre": "Línea 1 - Metro SD",
+      "tipo": "Metro",
+      "origen": "Villa Mella",
+      "destino": "Centro de los Héroes",
+      "tiempo_base": 25,
+      "costo_base": 35,
+      "transbordos": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Ruta 27 de Febrero",
+      "tipo": "Guagua",
+      "origen": "Pintura",
+      "destino": "Máximo Gómez",
+      "tiempo_base": 40,
+      "costo_base": 35,
+      "transbordos": 0
+    },
+    {
+      "id": 3,
+      "nombre": "Corredor Churchill",
+      "tipo": "OMSA",
+      "origen": "Centro de los Héroes",
+      "destino": "Piantini",
+      "tiempo_base": 20,
+      "costo_base": 15,
+      "transbordos": 1
+    },
+    {
+      "id": 4,
+      "nombre": "Concho Kilómetro 9",
+      "tipo": "Carro Público",
+      "origen": "KM 9 Enriquillo",
+      "destino": "Los Alcarrizos",
+      "tiempo_base": 15,
+      "costo_base": 50,
+      "transbordos": 0
+    },
+    {
+      "id": 5,
+      "nombre": "Moto-envío Colonial",
+      "tipo": "Motoconcho",
+      "origen": "Máximo Gómez",
+      "destino": "Zona Colonial",
+      "tiempo_base": 12,
+      "costo_base": 100,
+      "transbordos": 0
+    }
+  ],
+  "config_alertas": [
+    { "id": "lluvia", "nombre": "Lluvia", "pct": 30, "costo_extra": 0 },
+    { "id": "hora_pico", "nombre": "Hora Pico", "pct": 60, "costo_extra": 0 },
+    { "id": "paro", "nombre": "Paro de Choferes", "pct": 0, "costo_extra": 50 }
+  ]
+}
